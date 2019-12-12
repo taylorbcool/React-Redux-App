@@ -78,7 +78,7 @@ const Data = props => {
             <div className='results'>
                 <h2>Results for the</h2>
                 <h3>{props.raceData.season} {props.raceData.raceName}</h3>
-                <h4>Race #{props.raceData.round} of the season.</h4>
+                <h4>Race #{props.raceData.round} of the {props.raceData.season} season.</h4>
                 <div className='podium'>
                 <h2>Winner: {props.raceData.winner.Driver.givenName} {props.raceData.winner.Driver.familyName}</h2>
                 <h2>Second: {props.raceData.second.Driver.givenName} {props.raceData.second.Driver.familyName}</h2>
