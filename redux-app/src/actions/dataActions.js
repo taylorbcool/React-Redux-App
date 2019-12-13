@@ -8,7 +8,7 @@ export const getData = (year, round) => dispatch => {
     dispatch({ type: FETCH_DATA_START });
     console.log('getData firing')
     axios
-        .get(`http://ergast.com/api/f1/${year}/${round}/results.json`)
+        .get(`https://ergast.com/api/f1/${year}/${round}/results.json`)
         .then(res => {
             // console.log(res.data)
             dispatch({ type: FETCH_DATA_SUCCESS, payload: res.data });
