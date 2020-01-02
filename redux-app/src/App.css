@@ -1,0 +1,96 @@
+/* Fonts
+  font-family: 'Asap', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+*/
+
+body{
+  font-size: 62.5%;
+}
+
+.App {
+  text-align: center;
+  width: 75%;
+  margin: 4rem auto;
+  padding: 1rem;
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px 4px #ccc;
+}
+
+h1{
+  font-size: 2rem;
+  font-family: 'Asap', sans-serif;
+}
+
+h2{
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form{
+  background-color: slategray;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  width: 75%;
+  font-size: 1.3rem;
+  border-radius: 15px;
+}
+
+select{
+  margin: 1rem;
+}
+
+button{
+  padding: 0.5rem;
+  margin: 1rem 2rem;
+  background-color: palegoldenrod;
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Asap', sans-serif;
+}
+
+button:hover{
+  background-color: goldenrod;
+  color: white;
+}
+
+.results{
+  background-color: whitesmoke;
+  border: black;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.podium{
+  background-color: slateblue;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem;
+}
