@@ -6,6 +6,16 @@ import { getData } from '../actions/dataActions';
 const Data = props => {
     const [year, setYear] = useState('')
     const [round, setRound] = useState('')
+
+    const buildOptions = () => {
+        var arr = [];
+
+        for (let i = 1; i < 20; i++) { 
+            arr.push(<option key={i} value={`${i}`}>{i}</option>)
+        }
+
+        return arr;
+    }
     
     const handleYear = (e) => {
         setYear(e.target.value);
@@ -41,7 +51,9 @@ const Data = props => {
                     value={round}
                     onChange={handleRound}
                 >
-                    <option value='1'>1</option>
+                    {buildOptions()}
+
+                    {/* <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
                     <option value='4'>4</option>
@@ -60,7 +72,7 @@ const Data = props => {
                     <option value='17'>17</option>
                     <option value='18'>18</option>
                     <option value='19'>19</option>
-                    <option value='20'>20</option>
+                    <option value='20'>20</option> */}
                     <option value='last'>21</option>
                 </select>
                 
